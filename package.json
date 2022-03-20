@@ -1,0 +1,8 @@
+{
+  "name": "javascript-algoritmos-estrutura-dados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MunrraMT/javascript-algoritmos-estrutura-dados.git",
+  "author": "Andre Rodrigues Melgaço dos Santos <dev-asantos@outlook.com>",
+  "license": "MIT"
+}
