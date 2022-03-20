@@ -21,3 +21,17 @@ numbers.unshift(-3);
 numbers.unshift(-4);
 
 console.log(numbers);
+
+numbers.pop();
+numbers.pop();
+numbers.pop();
+numbers.pop();
+
+console.log(numbers);
+
+numbers.shift();
+numbers.shift();
+numbers.shift();
+numbers.shift();
+
+console.log(numbers);
