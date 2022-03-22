@@ -6,7 +6,7 @@ const Stack = () => {
   let items = [];
 
   const push = (element) => items.push(element);
-  const pop = (element) => items.pop(element);
+  const pop = () => items.pop();
 
   const peek = () => items[items.length];
   const isEmpty = () => items.length === 0;
