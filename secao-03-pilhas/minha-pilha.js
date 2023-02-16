@@ -55,6 +55,8 @@ pilha.push('Maria');
 pilha.push('Camila');
 pilha.push('André');
 pilha.print();
+console.log(pilha.size());
+console.log(pilha.peek());
 
 for (let index = 0; index < 1000000; index++) {
   pilha.push(index);
@@ -62,7 +64,7 @@ for (let index = 0; index < 1000000; index++) {
 
 pilha.print();
 console.log(pilha.size());
-pilha.peek();
+console.log(pilha.peek());
 pilha.print();
 pilha.pop();
 pilha.print();
