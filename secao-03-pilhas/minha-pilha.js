@@ -2,46 +2,50 @@
 // Princípio LIFO - Last In First Out
 // O último a entrar é o primeiro a sair
 
-function Stack() {
-  var items = [];
+const Stack = () => {
+  let items = [];
+  let itemsSize = 0;
 
-  function push(element) {
+  const push = (element) => {
     // adiciona um novo item a pilha
     items.push(element);
-  }
+    itemsSize++;
+  };
 
-  function pop() {
+  const pop = () => {
     // remove o item do topo da pilha
     items.pop();
-  }
+    itemsSize--;
+  };
 
-  function peek() {
+  const peek = () => {
     // devolve o elemento que está no topo da pilha
-    return items[items.length - 1];
-  }
+    return items[itemsSize - 1];
+  };
 
-  function isEmpty() {
+  const isEmpty = () => {
     // Informa se a pilha está vazia
-    return items.length > 0;
-  }
+    return itemsSize === 0;
+  };
 
-  function clear() {
+  const clear = () => {
     // Limpa a pilha
     items = [];
-  }
+    itemsSize = 0;
+  };
 
-  function size() {
+  const size = () => {
     // Informa o tamanho da pilha
-    return items.length;
-  }
+    return itemsSize;
+  };
 
-  function print() {
+  const print = () => {
     // Imprime a pilha no console
     console.log(items);
-  }
+  };
 
   return { push, pop, print, peek, isEmpty, size, clear };
-}
+};
 
 // testando a pilha
 const start = Date.now();
